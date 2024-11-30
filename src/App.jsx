@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import "./App.css"
 import { pizzaPrices } from "./utils/pizza"
 
-const SERVER_URL = "https://pizza-app-server-seven.vercel.app/"
+const SERVER_URL = "https://pizza-app-server-seven.vercel.app"
 
 function App() {
   const [allToppings, setAllToppings] = useState([])
