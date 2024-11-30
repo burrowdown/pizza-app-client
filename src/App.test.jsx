@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from "vitest"
 import { act, fireEvent, render, screen, waitFor } from "@testing-library/react"
 import App from "./App"
-import { pizzaPrices } from "../../pizza-server/utils/pizza"
+import { pizzaPrices } from "./utils/pizza"
 
 // Mock fetch globally (replace fetch with an empty function)
 global.fetch = vi.fn()

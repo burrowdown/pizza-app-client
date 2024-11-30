@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import "./App.css"
-import { pizzaPrices } from "../../pizza-server/utils/pizza"
+import { pizzaPrices } from "./utils/pizza"
 
 function App() {
   const [allToppings, setAllToppings] = useState([])
