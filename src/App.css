@@ -1,0 +1,68 @@
+body {
+  background-color: #d6d6d6;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #050517;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+#menu-wrapper {
+  background-color: #eee;
+  border: 3px solid #8a0517;
+  padding: 3rem;
+  width: 18rem;
+}
+
+h3 {
+  margin: 0.5rem;
+}
+
+h4 {
+  text-decoration: underline;
+  color: #666;
+  text-align: center;
+}
+
+.item-price {
+  color: #666;
+  padding-left: 0.3rem;
+}
+
+.tag-wrapper {
+  margin: 0.5rem;
+}
+
+.tag {
+  font-size: 0.8rem;
+  border-radius: 4px;
+  background-color: #88af87;
+  color: #f0eff4;
+  margin-left: 1rem;
+  padding: 0.3rem;
+}
+
+.tag.active {
+  background-color: #32892f;
+}
+
+#submit {
+  border: none;
+  padding: 5px;
+  min-width: 150px;
+  border-radius: 4px;
+  background-color: #d90824;
+  color: white;
+  margin-top: 0.8rem;
+}
+
+#submit:hover {
+  background-color: #8a0517;
+}
+
+#submit:disabled {
+  background-color: #8a0517;
+}
