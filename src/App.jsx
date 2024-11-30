@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"
 import "./App.css"
 import { pizzaPrices } from "./utils/pizza"
 
+const SERVER_URL = "https://pizza-app-server-sepia.vercel.app"
+
 function App() {
   const [allToppings, setAllToppings] = useState([])
   const [showVeg, setShowVeg] = useState(false)
@@ -17,7 +19,7 @@ function App() {
   }
 
   const placeOrder = () => {
-    fetch("http://localhost:4000/order/", {
+    fetch(`${SERVER_URL}/order/`, {
       method: "POST",
       body: JSON.stringify({ toppings, size }),
       headers: {
@@ -35,7 +37,7 @@ function App() {
 
   // fetch toppings
   useEffect(() => {
-    fetch(`http://localhost:4000/toppings/?vegetarian=${showVeg}`)
+    fetch(`${SERVER_URL}/toppings/?vegetarian=${showVeg}`)
       .then((res) => res.json())
       .then((data) => setAllToppings(data))
       .catch((err) => console.warn(err))
